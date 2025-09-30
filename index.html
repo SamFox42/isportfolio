@@ -10,7 +10,7 @@
 <meta content="Иван Селезнёв — разработка сайтов под ключ" property="og:title"/>
 <meta content="Разработка аккуратных сайтов: лендинги, каталоги, интеграции. Адаптив, скорость, базовое SEO. Самозанятый разработчик — Иван Селезнёв." property="og:description"/>
 <meta content="website" property="og:type"/>
-<meta content="new-qr-payment.png" property="og:image"/>
+<meta content="logo.webp" property="og:image"/>
 <!-- Favicon -->
 
 <link href="styles.css" rel="stylesheet"/>
@@ -182,12 +182,19 @@
 <p class="payment-intro">Самозанятый. Оплата удобным способом.</p><p class="payment-note"><i class="fa-brands fa-whatsapp"></i>  можно написать перед оплатой, уточню детали</i></p>
 <div class="payment-methods">
 <div class="payment-method">
-<h3></i><img alt="Т-Банк" class="bank-logo" src="tbank.png"/>Перевод по номеру <span class="preferred-badge">рекомендуемый</span></h3>
+<h3></i><img alt="Т-Банк" class="bank-logo" src="tbank.png"/><img alt="Озон Банк" class="bank-logo" src="ozon.png"/>Перевод по номеру <span class="preferred-badge">рекомендуемый</span></h3>
 <p><a href="tel:+79887684393">+7 988 768-43-93</a></p>
 </div>
 <div class="payment-method">
-<h3></i><i class="fa-solid fa-credit-card icon-left"></i>Перевод по номеру карты</h3>
-<p>2200 7019 7753 6058</p>
+  <h3><i class="fa-solid fa-credit-card icon-left" aria-hidden="true"></i>Перевод по номеру карты</h3>
+
+  <div class="card-mask" tabindex="0" aria-describedby="cardMaskHint">
+    <span class="card-mask-pan" aria-hidden="true">2200&nbsp;70••&nbsp;••••&nbsp;••••</span>
+  </div>
+
+  <p class="card-mask-hint" id="cardMaskHint">
+    номер карты получается лично
+  </p>
 </div>
 <div class="payment-qr">
 <div class="qr-container">
